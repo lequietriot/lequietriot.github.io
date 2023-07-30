@@ -1,16 +1,17 @@
 <HTML>
 <HEAD>
     <TITLE>RuneScape MIDI Player</TITLE>
-    <script type="text/javascript">
+    <script>
         function loadApplet()
         {
-        alert("Loading Applet");
-        document.write("<applet archive='TestSound.jar' code='main.MusicPlayerOSRS' height='600' width='800'></applet>");
+        var attributes = {code:'main.Main.class', width:300, height:300} ;
+        var parameters = {jnlp_href:'TestSoundApplet.jnlp'} ;
+        deployJava.runApplet(attributes, parameters, '1.6');
         }
     </script>
 </HEAD>
 <BODY>
 <p>Click here to test an OSRS song!</p>
 <button onclick="loadApplet();">Click here</button>
-</BODY>
+</body>
 </HTML>

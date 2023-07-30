@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Sound Demo</title>
+    </information>
+    <resources>
+        <j2se version="1.6"
+              max-heap-size="1024m"/>
+        <jar href="TestSound.jar" main="true" />
+
+    </resources>
+    <applet-desc
+            name="Test Sound"
+            main-class="main.Main.class"
+            width="300"
+            height="300">
+    </applet-desc>
+</jnlp>
