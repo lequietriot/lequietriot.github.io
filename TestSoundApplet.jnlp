@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jnlp spec="1.0+" codebase="" href="">
+<jnlp spec="1.0+" codebase="https://github.com/lequietriot/lequietriot.github.io/raw/main" href="">
     <information>
         <title>Sound Demo</title>
     </information>
     <resources>
-        <j2se version="1.6"
-              max-heap-size="1024m"/>
-        <jar href="TestSound.jar" main="true" />
-
+        <property name="jnlp.publish.url" value="$$context/publish/"/>
+        <j2se version="1.3+" href="http://java.sun.com/products/autodl/j2se/"/>
+        <jar href="TestSound.jar"/>
     </resources>
-    <applet-desc
-            name="Test Sound"
-            main-class="main.Main.class"
-            width="300"
-            height="300">
-    </applet-desc>
+    <application-desc
+            main-class="com.MusicPlayer">
+    </application-desc>
 </jnlp>
